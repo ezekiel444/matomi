@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom_h1{
+@apply font-sans text-h1_custom font-bold text-black
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Nav */
+.nav li{
+@apply mx-2
+}
+
+.nav li:hover{
+@apply text-cyan-400
+}
+
+.nav li:focus{
+@apply underline
+}
+
+/* general */
+
+.custom_shadow{
+    @apply shadow shadow-slate-300 bg-white
+}
+
+.custom_border{
+    @apply border-solid border-2 border-sky
+}
+
+.custom_input{
+    @apply h-11 w-[30em] pl-3 text-xl bg-transparent text-black rounded-md border-solid border-2 border-slate-400 mb-3
+ }
+
+ input{
+     @apply outline-0 w-full
+ }
+
+ input[type="text"]::placeholder{
+    @apply text-black
+}
+
+textarea{
+    @apply custom_input pt-3
 }

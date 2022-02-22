@@ -1,24 +1,24 @@
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import BackgroundImageWrapper from './screen/BackgroundImageWrapper';
+import Logo from "./asset/me.jpg"
+import HomePage from './screen/HomePage';
+import NavBar from './screen/NavBar';
+import About from './screen/About';
+import Skill from './screen/Skill';
+import Experience from './screen/Experience';
+import Contact from './screen/Contact';
+import CustomBtn from './component/CustomBtn';
+import Portfolio from './screen/Portfolio';
+import BlogScreen from './screen/BlogScreen';
+import SocialMediaIcon from './component/SocialMediaIcon';
+import Footer from './screen/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container mx-auto'>
+      <Footer />
+
     </div>
   );
 }
