@@ -4,7 +4,7 @@ import ProgressBar from '../component/ProgressBar'
 
 export default function () {
   return (
-    <div className='w-full flex justify-around mt-10'>
+    <div className='w-full flex justify-evenly mt-10'>
         <main>
             <h1 className='custom_h1 text-center'>Technical skills</h1>
             <div className='w-[30em]'> 

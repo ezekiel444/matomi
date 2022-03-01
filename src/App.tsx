@@ -21,6 +21,9 @@ function App() {
     <HomePage/>
    <About/>
    <Skill/>
+   <Experience/>
+   <Contact />
+   <Footer/>
     </div>
   );
 }

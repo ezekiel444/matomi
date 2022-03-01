@@ -14,10 +14,8 @@ module.exports = {
       lightBlue:"#7dc480",
       sky:"#4CAF50",
       img:"#927353"
-      },
-      fontSize:{
-        
-      },
+      
+      }
       // backgroundImage:{
 
       // }

@@ -5,22 +5,29 @@ import React from 'react'
 import {TiLocationArrow} from "react-icons/ti"
 import {AiOutlineMail} from "react-icons/ai"
 import {IoIosCall} from "react-icons/io"
+import ContactContainer from './sub-contact/ContactContainer'
 
 export default function Contact() {
   return (
     <div>
         <h1 className='text-center custom_h1'>Contact Me</h1>
-       <div className="flex justify-around h-screen" style={{backgroundImage:`url("/asset/contact.png")`}}>
-       <main>
-            <div className="flex h-36 w-[30em] justify-center items-center custom_shadow">
-                <div className='h-20 w-20 mr-4 rounded-full flex justify-center items-center custom_border'>
-                    <TiLocationArrow size={30} />
-                </div>
-               <div className="contact_title">
-               <h2 className='custom_h1'>Address</h2>
-                <p>5th Avenue, 34th floor,Grenoble</p>
-               </div>
-            </div>
+       <div className="flex justify-evenly items-center h-screen" style={{backgroundImage:`url("/asset/contact.png")`}}>
+       <main className=''>
+           <ContactContainer
+            Icon={TiLocationArrow}
+            title={"Address"}
+            detail={"96 rue stadlingrad, Grenoble"}
+           />
+           <ContactContainer
+            Icon={AiOutlineMail}
+            title={"Email"}
+            detail={"matomiezekiel6@gmail.com"}
+           />
+           <ContactContainer
+            Icon={IoIosCall}
+            title={"Phone"}
+            detail={"0753432920"}
+           />
             </main>
             <main className='flex flex-col w-1/3'>              
                 <input className='custom_input'  type="text" placeholder='Name'/>
