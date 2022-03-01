@@ -13,12 +13,14 @@ import Portfolio from './screen/Portfolio';
 import BlogScreen from './screen/BlogScreen';
 import SocialMediaIcon from './component/SocialMediaIcon';
 import Footer from './screen/Footer';
+import FeaturedProject from './component/FeaturedProject';
 
 function App() {
   return (
-    <div className='container mx-auto'>
-      <Footer />
-
+    <div className='container mx-auto box-border max-h-screen max-w-full'>
+    <HomePage/>
+   <About/>
+   <Skill/>
     </div>
   );
 }

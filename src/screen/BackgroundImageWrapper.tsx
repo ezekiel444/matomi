@@ -1,23 +1,26 @@
 
 
-import { url } from 'inspector'
 import React from 'react'
 import Logo from "../asset/art.svg"
 
 
 export default function BackgroundImageWrapper({children}:propType) {
-  console.log(children);
   
   return (
-    <div className='max-h-full max-w-full h-screen bg-no-repeat bg-cover opacity-customOpacity'
-    style={{
-      backgroundImage:`url("/asset/art.svg")`
-    }} >
-   
-   </div>
+    <>   
+        <div className='h-screen max-h-screen max-w-full bg-no-repeat bg-cover'
+        style={{
+          backgroundImage:`url("/asset/art.svg")`,
+          opacity:0.1
+        }}/>
+        <div className='absolute top-0 h-screen w-full flex justify-evenly items-center'>
+          {children}
+        </div>
+    </>
   )
 }
 
 type propType = {
-  children:React.ReactNode
+  children?: any
+
 }

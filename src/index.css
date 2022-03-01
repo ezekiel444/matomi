@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom_h1{
-@apply font-sans text-h1_custom font-bold text-black
-}
 
+/* About */
+
+.about li{
+@apply border-[1px] border-sky p-1
+}
 
 /* Nav */
 .nav li{
@@ -20,7 +22,15 @@
 @apply underline
 }
 
-/* general */
+/* Custom ClassName */
+
+.custom_h1{
+@apply font-serif text-[1.8rem] opacity-[0.7] font-bold text-black
+}
+
+.custom_h2{
+@apply font-mono font-semibold text-[1.3em] text-black
+}
 
 .custom_shadow{
     @apply shadow shadow-slate-300 bg-white
@@ -28,6 +38,10 @@
 
 .custom_border{
     @apply border-solid border-2 border-sky
+}
+
+.custom_firstletter :where(h1)::first-letter{
+@apply text-[2em] font-bold text-red-300
 }
 
 .custom_input{
@@ -40,6 +54,10 @@
 
  input[type="text"]::placeholder{
     @apply text-black
+}
+
+p{
+@apply break-words 
 }
 
 textarea{

@@ -6,36 +6,34 @@ import {FaLayerGroup} from "react-icons/fa"
 import {IoMdDownload} from "react-icons/io"
 import CustomBtn from '../component/CustomBtn'
 import FeaturedProject from '../component/FeaturedProject'
+import BackgroundImageWrapper from './BackgroundImageWrapper'
 
 
 
-export default function 
-() {
+export default function About() {
   return (
     <>
-    <main className='flex justify-around my-16 gap-5'>
-      <div className="w-48">
-        <img className='w-full' src="/asset/about_me.svg" alt="#" />
+    <main className='flex justify-evenly my-16 gap-5 custom_shadow'>
+      <div className="h-[40em] w-[30em]  rounded-xl overflow-hidden">
+        <img className='w-full h-full' src="/asset/about_me.svg" alt="cartoon setup" />
       </div>
-    <section className="w-52">
-      <h1 className='custom_h1'>About me</h1>
-      <p className='w-5 flex-wrap'>Hello, </p>
-      <ul className="flex mx-3 test flex-wrap" >
+    <section className="flex custom_firstletter justify-center flex-col">
+      <h1 className='custom_h1'>Hello,</h1>
+      <p className='w-[30em] h-[5em] text-[1.0em] break-words'>I’m a Matomi, web-developer based on Grenoble. I have rich experience in web site design & building and customization. Also I am good at </p>
+      <ul className="flex gap-3 mb-5 about flex-wrap" >
         <li>html</li>
         <li> css</li>
         <li>Javascript</li>
         <li>React</li>
       </ul>
 
-    
-     <CustomBtn title='Download Cv' icon={IoMdDownload} />
-    
+     <CustomBtn title='Download Cv' icon={IoMdDownload} /> 
     </section>
    
     </main>
-     <div className="">
-     <h1 className='custom_h1 text-center'>What i do</h1>
-     <div className="flex gap-6 justify-center">
+     <div className="mt-52">
+     <h1 className='custom_h1 mb-20 text-center'>What I do</h1>
+     <div className="flex gap-8 justify-center">
        {whatido.map(({icon,text,title})=>(
          <div className='h-72 w-80 custom_shadow'>
            <div className="my-5 mx-4">{icon}</div>
@@ -44,7 +42,7 @@ export default function
          </div>
        ))}
      </div>
-     <FeaturedProject />
+     <FeaturedProject/>
      </div>
     </>
   )

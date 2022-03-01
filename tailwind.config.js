@@ -13,9 +13,10 @@ module.exports = {
       colors: {
       lightBlue:"#7dc480",
       sky:"#4CAF50",
+      img:"#927353"
       },
       fontSize:{
-        "h1_custom":"25px"
+        
       },
       // backgroundImage:{
 
