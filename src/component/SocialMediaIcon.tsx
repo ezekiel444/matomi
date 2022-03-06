@@ -7,7 +7,7 @@ import {RiContactsFill} from "react-icons/ri"
 export default function SocialMediaIcon() {
   return (
     <div className='flex gap-6 my-6'>
-  {tempData.iconUrl.map(({icon})=>(<div>{icon}</div>))}
+  {tempData.iconUrl.map(({icon},id)=>(<div key={id}>{icon}</div>))}
   </div>
   )
 }

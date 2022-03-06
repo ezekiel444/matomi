@@ -9,8 +9,8 @@ import {homePageAddresseIcon} from "../data/StoreRoom"
 
 export default function HomePage() {
 
-  const renderDetail = homePageAddresseIcon.contact.map(({icon,text})=>(
-    <div className='flex flex-row items-center gap-2 mt-2'>
+  const renderDetail = homePageAddresseIcon.contact.map(({icon,text},id)=>(
+    <div className='flex flex-row items-center gap-2 mt-2' key={id}>
         <div>{icon}</div>
         <div>{text}</div>
     </div>

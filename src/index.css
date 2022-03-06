@@ -63,3 +63,9 @@ p{
 textarea{
     @apply custom_input pt-3
 }
+
+/* portfolio hover effect */
+
+.portfolioEffect{
+@apply h-80
+}
